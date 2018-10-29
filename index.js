@@ -11,11 +11,7 @@ const increaseRankBy = ( n ) => {
 const deepestChild = () => {
   var grand = document.getElementById( 'grand-node' )
   while ( grand.childElementCount > 0 ){
-      console.log('-')
-      console.log(grand.children[0].innerHTML)
-      console.log('-')
       grand = grand.children[0]
   }
-  console.log(grand.innerHTML)
   return grand
 }
