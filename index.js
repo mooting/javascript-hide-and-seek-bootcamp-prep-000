@@ -13,6 +13,6 @@ const deepestChild = () => {
   while ( grand.children ){
       grand = grand.children
   }
-  console.log(grand)
+  console.log(grand.innerHTML)
   return grand
 }
