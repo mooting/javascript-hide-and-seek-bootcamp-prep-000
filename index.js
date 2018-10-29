@@ -14,8 +14,10 @@ const deepestChild = () => {
   const goDeep = tree => {
     if( tree.children )
       goDeep( tree.children )
-    else
+    else{
+      console.log( tree.innerHTML )
       return tree
+    }
   }
   let y = goDeep( x )
   console.log( y.innerHTML )
