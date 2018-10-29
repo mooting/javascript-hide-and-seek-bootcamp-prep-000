@@ -12,9 +12,9 @@ const deepestChild = () => {
   var grand = document.getElementById( 'grand-node' )
   while ( grand.childElementCount > 0 ){
       console.log('-')
-      console.log(grand.firstChild.innerHTML)
+      console.log(grand.children[0].innerHTML)
       console.log('-')
-      grand = grand.firstChild
+      grand = grand.children[0]
   }
   console.log(grand.innerHTML)
   return grand
