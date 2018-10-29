@@ -9,7 +9,7 @@ const increaseRankBy = ( n ) => {
 }
 
 const deepestChild = () => {
-  var grand = document.getElementById( grand-node )
+  var grand = document.getElementById( 'grand-node' )
   while ( grand.children ){
       console.log('-')
       console.log(grand.children.innerHTML)
