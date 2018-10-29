@@ -11,11 +11,11 @@ const increaseRankBy = ( n ) => {
 const deepestChild = () => {
   var x = document.querySelector( '#grand-node')
   console.log( `node: ${x.nodeType}` )
-  var goDeep = node => {
-    if( node.children )
-      goDeep( node.children )
+  var goDeep = tree => {
+    if( tree.children )
+      goDeep( tree.children )
     else
-      return node
+      return tree
   }
   return goDeep( x )
 }
