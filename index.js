@@ -10,7 +10,7 @@ const increaseRankBy = ( n ) => {
 
 const deepestChild = () => {
   var grand = document.getElementById( 'grand-node' )
-  while ( grand.children[0].children ){
+  while ( grand.childElementCount > 0 ){
       console.log('-')
       console.log(grand.children[0].innerHTML)
       console.log('-')
