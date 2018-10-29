@@ -11,7 +11,7 @@ const increaseRankBy = ( n ) => {
 const deepestChild = () => {
   var x = document.querySelector( '#grand-node')
   console.log( `node: ${x.nodeType}` )
-  var goDeep = tree => {
+  const goDeep = tree => {
     if( tree.children )
       goDeep( tree.children )
     else
