@@ -12,8 +12,8 @@ const deepestChild = () => {
   var x = document.querySelector( '#grand-node')
   console.log( `node: ${x.nodeType}` )
   var goDeep = node => {
-    if( node.firstElementChild )
-      goDeep( node.firstElementChild )
+    if( node.children )
+      goDeep( node.children )
     else
       return node
   }
