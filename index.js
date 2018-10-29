@@ -18,6 +18,6 @@ const deepestChild = () => {
       return tree
   }
   let y = goDeep( x )
-  console.log( x.innerHTML )
+  console.log( y.innerHTML )
   return y
 }
